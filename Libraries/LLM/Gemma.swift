@@ -370,3 +370,12 @@ public class Gemma2Model: Module, LLMModel {
         return (out, cache)
     }
 }
+
+// MARK: - LoRA
+
+extension Gemma2Model: LoRAModel {
+    public func loraLinearLayers() -> LoRALinearLayers {
+        model.layers.map { ($0.attention, ["q_proj", "v_proj"]) }
+    }
+}
+
