@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ml-explore/mlx-swift",
       "state" : {
-        "branch" : "main",
-        "revision" : "5e51224ac869366017859dc0b07f6d2dc51b3bae"
+        "revision" : "597aaa5f465b4b9a17c8646b751053f84e37925b",
+        "version" : "0.16.0"
       }
     },
     {
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-argument-parser.git",
       "state" : {
-        "revision" : "c8ed701b513cf5177118a175d85fbbbcd707ab41",
-        "version" : "1.3.0"
+        "revision" : "41982a3656a71c768319979febd796c6fd111d5c",
+        "version" : "1.5.0"
       }
     },
     {
@@ -59,8 +59,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/huggingface/swift-transformers",
       "state" : {
-        "revision" : "4f915610451d29a05948802a140880ff37494dad",
-        "version" : "0.1.6"
+        "revision" : "e72d032ed742dcc8b364780ce4e02b25ab7a09b0",
+        "version" : "0.1.9"
       }
     }
   ],
