@@ -177,8 +177,8 @@ public enum GenerateDisposition: Sendable {
 public func generate(
     promptTokens: [Int], parameters: GenerateParameters, model: LLMModel, tokenizer: Tokenizer,
     extraEOSTokens: Set<String>? = nil,
-    didGenerate: ([Int]) -> GenerateDisposition
-) -> GenerateResult {
+    didGenerate: ([Int]) async -> GenerateDisposition
+) async -> GenerateResult {
     var start = Date.timeIntervalSinceReferenceDate
     var promptTime: TimeInterval = 0
 
@@ -210,7 +210,7 @@ public func generate(
 
         tokens.append(t)
 
-        if didGenerate(tokens) == .stop {
+        if await didGenerate(tokens) == .stop {
             break
         }
     }
